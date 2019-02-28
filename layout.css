@@ -1,0 +1,145 @@
+/* Add layout here */
+
+/* LAYOUT 1
+body {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 20% 60% 10% 10%;
+    grid-template-areas: 
+        'header art-nav'
+        'article art-nav'
+        'links art-nav'
+        'footer art-nav';
+    grid-gap: 10px;
+}
+
+nav.navigation {
+    grid-area: art-nav;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: article;
+}
+
+nav.links {
+    grid-area: links;
+}
+
+nav.links > ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+footer {
+    grid-area: footer;
+}
+*/
+
+/* LAYOUT 2
+body {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 20% 60% 10% 10%;
+    grid-template-areas: 
+        'header art-nav'
+        'article art-nav'
+        'article art-nav'
+        'footer links';
+    grid-gap: 10px;
+}
+
+nav.navigation {
+    grid-area: art-nav;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: article;
+}
+
+nav.links {
+    grid-area: links;
+}
+
+footer {
+    grid-area: footer;
+}
+*/
+
+/* LAYOUT 3
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 60% 10% 10%;
+    grid-template-areas: 
+        'art-nav header links'
+        'art-nav footer links'
+        'art-nav article links'
+        'art-nav article links';
+    grid-gap: 10px;
+}
+
+nav.navigation {
+    grid-area: art-nav;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: article;
+}
+
+nav.links {
+    grid-area: links;
+}
+
+footer {
+    grid-area: footer;
+}
+*/
+
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 60% 10% 10%;
+    grid-template-areas: 
+        'art-nav header links'
+        'art-nav article links'
+        'art-nav article links'
+        'art-nav footer links';
+    grid-gap: 10px;
+}
+
+nav.navigation {
+    grid-area: art-nav;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: article;
+}
+
+nav.links {
+    grid-area: links;
+}
+
+footer {
+    grid-area: footer;
+}
+
+article > p:nth-of-type(2) {
+    float:  left;
+    width: 35%;
+}
